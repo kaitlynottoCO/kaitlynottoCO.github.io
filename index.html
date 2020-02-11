@@ -50,6 +50,14 @@
         analytics.track('destination submitted', user, function() {
             window.location.href = "";
         });
+        analytics.page('HOME');
+        analytics.group('1234', {
+            name: fullname,
+            industry: 'Travelers',
+            destination: destination
+        });
+        analytics.alias('123456');  
+            
       }
     </script>
 </body> 
