@@ -43,10 +43,10 @@
             destination: destination, 
             details: details
         };
-        analytics.identify('123',{
+        analytics.identify({
             email: email, 
             name: fullname,
-            Segment_ID: '456789'
+            viewed_home_page: true
         });
         analytics.track('destination submitted', user, function() {
             window.location.href = "";
