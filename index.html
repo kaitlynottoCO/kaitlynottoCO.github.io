@@ -41,10 +41,9 @@
             email: email, 
             name: fullname, 
             destination: destination, 
-            details: details,
-            userId: email
+            details: details
         };
-        analytics.identify({
+        analytics.identify(email, {
             email: email, 
             name: fullname
         });
