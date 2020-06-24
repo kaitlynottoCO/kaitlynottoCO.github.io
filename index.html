@@ -46,7 +46,7 @@
         analytics.identify({
             email: email, 
             name: fullname,
-            viewed_home_page: true
+            userId: email
         });
         analytics.track('destination submitted', user, function() {
             window.location.href = "";
