@@ -41,12 +41,12 @@
             email: email, 
             name: fullname, 
             destination: destination, 
-            details: details
+            details: details,
+            userId: email
         };
         analytics.identify({
             email: email, 
-            name: fullname,
-            userId: email
+            name: fullname
         });
         analytics.track('destination submitted', user, function() {
             window.location.href = "";
