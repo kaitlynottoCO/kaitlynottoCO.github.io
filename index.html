@@ -43,10 +43,9 @@
             destination: destination, 
             details: details
         };
-        analytics.identify( {
+        analytics.identify("998877665544", {
             email: email, 
-            name: fullname,
-            segmentId: 987654321
+            name: fullname
         });
         analytics.track('destination submitted', user, function() {
             window.location.href = "";
