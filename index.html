@@ -45,7 +45,8 @@
         };
         analytics.identify( {
             email: email, 
-            name: fullname
+            name: fullname,
+            test_segment_id: "123testcustom123"
         });
         analytics.track('destination submitted', user, function() {
             window.location.href = "";
