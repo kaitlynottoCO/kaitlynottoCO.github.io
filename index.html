@@ -47,7 +47,16 @@
             email: email, 
             name: fullname
         });
-        analytics.track('destination submitted', user, function() {
+        analytics.track('destination submitted', user, {
+  externalIds: [
+    {
+      id: '123-456-7890',
+      type: 'phone',
+      collection: 'users',
+      encoding: 'none'
+    }
+  ]
+}, function() {
             window.location.href = "";
         });
         analytics.page('HOME');  
